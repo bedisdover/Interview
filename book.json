@@ -1,0 +1,28 @@
+{
+	"title": "面试知识点整理",
+	"description": "面试知识点, Java",
+	"author": "bedisdover",
+	"language" : "zh-hans",
+	"links": {
+		"sidebar": {
+            "个人主页" : "http://bedisdover.top"
+		}
+	},
+	"plugins": [
+		"toggle-chapters",
+		"splitter",
+		"prism",
+		"disqus",
+		"tbfed-pagefooter"
+	],
+	"pluginsConfig": {
+		"tbfed-pagefooter": {
+			"copyright": "Copyright &copy; bedisdover 2017",
+			"modify_label": "File modified:",
+			"modify_format": "YYYY-MM-DD HH:mm"
+		},
+		"disqus": {
+			"shortName": ""
+		}
+	}
+}
