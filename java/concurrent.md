@@ -48,6 +48,44 @@ ReectrantLock 获取锁的方式
 
 ### java 线程的状态
 
+Thread.State 中定义了 java 线程的6中状态：
+
+- NEW 新建尚未启动
+
+    尚未调用 start() 方法
+
+- RUNNABLE 可运行状态
+
+    正在 jvm 中执行的线程的状态。在 RUNNABLE 状态下的线程可能等待一些系统资源的释放，比如 IO
+
+- BLOCKED 阻塞状态
+
+    线程等待锁的释放，比如线程 A 进入了一个 synchronized 方法，线程B也想进入这个方法，需要等待线程 A 释放锁
+
+- WAITING 等待状态
+
+    执行以下三个方法中的任意一个线程将处于等待状态：
+
+    - Object 的 wait() 方法，并且没有使用 timeout 参数
+    - Thread.join() 方法，并且没有使用 timeout 参数
+    - LockSupport.park() 方法
+
+    处于等待状态的线程需要等待其它线程进行特定的处理。如调用对象的 wait() 方法，需要其它线程调用这个对象的 notify() 或 notifyAll() 方法，才能解除等待状态
+
+- TIMED_WAITING 有等待时间的等待状态
+
+    类似 WAITING，带有等待时间。执行以下方法中的任意一个线程将处于有等待时间的等待状态：
+
+    - Thread.sleep() 方法
+    - Object 的 wait() 方法，带有 timeout 参数
+    - Thread.join() 方法，带有 timeout 参数
+    - LockSupport.parkNanos()，带有时间
+    - LockSupport.parkUntil(), 带有时间
+
+- TERMINATED: 终止状态
+
+    线程完整地执行了它的任务
+
 
 ### java 如何创建线程
 
@@ -67,3 +105,10 @@ ReectrantLock 获取锁的方式
 
 
 ### Thread.sleep() 和 wait() 的区别
+
+- sleep() 位于 Thread 中，为静态方法
+- wait() 位于 Object 中，为普通方法
+
+- sleep() 不释放获得的锁
+- wait() 释放获得的锁
+
