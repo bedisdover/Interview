@@ -2,6 +2,12 @@
 
 * [介绍](README.md)
 * [1. 算法和数据结构](data/README.md)
+    * [1.1 数据结构](data/dataStructure.md)
+    * [1.2 排序算法](data/sort.md)
+    * [1.3 二分查找](data/binarySearch.md)
+    * [1.4 动态规划](data/dynamicProgramming.md)
+    * [1.5 树](data/tree.md)
+    * [1.6 图](data/graph.md)
 * [2. 计算机网络](web/README.md)
     * [2.1 OSI 7层模型](web/OSI.md)
     * [2.2 HTTP](web/HTTP.md)
