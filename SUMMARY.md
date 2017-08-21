@@ -14,6 +14,7 @@
     * [3.4 数据库的锁](database/lock.md)
     * [3.5 事务](database/transaction.md)
     * [3.6 隔离级别](database/isolation.md)
+    * [3.7 范式](database/normalform.md)
 * [4. 操作系统](os/README.md)
 * [5. Java 语言](java/README.md)
     * [5.1 Java 基础](java/lang.md)
