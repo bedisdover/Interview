@@ -3,11 +3,6 @@
 	"description": "面试知识点, Java",
 	"author": "bedisdover",
 	"language" : "zh-hans",
-	"links": {
-		"sidebar": {
-            "个人主页" : "http://bedisdover.top"
-		}
-	},
 	"plugins": [
 		"toggle-chapters",
 		"splitter",
