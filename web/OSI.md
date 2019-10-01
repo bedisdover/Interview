@@ -7,7 +7,7 @@
   - FTP(File Transfer Protocol)
   - DNS(Domain Name System)
   - Telnet
-- 表示层 数据格式化，代码转换，数据加密 没有协议
+- 展示层 数据格式化，代码转换，数据加密 没有协议
 - 会话层 解除或建立与别的接点的联系 没有协议
 - 传输层 提供端对端的接口
   - TCP(Transmission Control Protocol)
